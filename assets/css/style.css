@@ -28,54 +28,118 @@ body {
     flex-direction: column;
     padding: 30px;
 }
-.card{
+
+.card {
     margin: 20px;
     box-shadow: 1px 13px 21px -13px var(--primary-blue);
     border-radius: 6px;
+    max-width: 320px;
     border-top: 4px solid var(--primary-cyan);
 }
-.card:nth-child(3){
+
+.card:nth-child(3) {
     border-top: 4px solid var(--primary-red);
-
 }
-.card:nth-child(4){
+
+.card:nth-child(4) {
     border-top: 4px solid var(--primary-orange);
-
 }
-.card:nth-child(5){
+
+.card:nth-child(5) {
     border-top: 4px solid var(--primary-blue);
-
 }
-.card h2{
+
+.card h2 {
     margin-bottom: 20px;
 }
-.card p{
+
+.card p {
     margin-bottom: 24px;
 }
-.img{
+
+.img {
     display: flex;
     justify-content: flex-end;
 }
-h1{
+
+h1 {
     font-weight: 200;
-    font-size:24px;
+    font-size: 24px;
     text-align: center;
 }
-h1>strong{
+
+h1>strong {
     font-size: 24px;
 }
 
-.p{
+.p {
     margin: 20px;
     font-size: 14px;
     text-align: center;
+    max-width: 400px;
 }
-p{
+
+p {
     font-weight: 200;
     font-size: 12px;
 }
 
+/* nomes de grid-areas */
 
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.supervisor {
+    grid-area: supervisor;
+}
+
+.team {
+    grid-area: team;
+}
+
+.karma {
+    grid-area: karma;
+}
+
+.calculator {
+    grid-area: calculator;
+}
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    grid-template-areas: 
+    "cabecalho"
+    "supervisor"
+    "team"
+    "karma"
+    "calculator"
+    "footer"
+    ;
+}
+
+@media only screen and (min-width:740px) {
+    
+    .cabecalho {
+        grid-column: 1 / 4;
+    }
+    body{
+        grid-template-areas: 
+            ". cabecalho ."
+            ". team ."
+            "supervisor team calculator"
+            "supervisor karma calculator"
+            ". karma ."
+            ". footer ."
+        ;
+    }
+    .cabecalho{
+        align-items: center;
+    }
+}
 
 /*estilos padrão do projeto*/
 
