@@ -1,0 +1,89 @@
+:root {
+    /*cores primarias*/
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+    /* Cores neutras */
+    --neutral-dark-blue: hsl(234, 12%, 34%);
+    --neutral-blue: hsl(229, 6%, 66%);
+    --neutral-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--neutral-dark-blue);
+}
+
+body {
+    display: grid;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.card{
+    margin: 20px;
+    box-shadow: 1px 13px 21px -13px var(--primary-blue);
+    border-radius: 6px;
+    border-top: 4px solid var(--primary-cyan);
+}
+.card:nth-child(3){
+    border-top: 4px solid var(--primary-red);
+
+}
+.card:nth-child(4){
+    border-top: 4px solid var(--primary-orange);
+
+}
+.card:nth-child(5){
+    border-top: 4px solid var(--primary-blue);
+
+}
+.card h2{
+    margin-bottom: 20px;
+}
+.card p{
+    margin-bottom: 24px;
+}
+.img{
+    display: flex;
+    justify-content: flex-end;
+}
+h1{
+    font-weight: 200;
+    font-size:24px;
+    text-align: center;
+}
+h1>strong{
+    font-size: 24px;
+}
+
+.p{
+    margin: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+p{
+    font-weight: 200;
+    font-size: 12px;
+}
+
+
+
+/*estilos padrão do projeto*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
