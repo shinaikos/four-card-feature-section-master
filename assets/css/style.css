@@ -21,16 +21,28 @@
 
 body {
     display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "supervisor"
+    "team"
+    "karma"
+    "calculator"
+    "footer"
+    ;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    margin: auto;
 }
 
 .card {
-    margin: 20px;
+    margin: 20px auto;
     box-shadow: 1px 13px 21px -13px var(--primary-blue);
     border-radius: 6px;
     max-width: 320px;
@@ -110,16 +122,6 @@ footer {
     grid-area: footer;
 }
 
-body {
-    grid-template-areas: 
-    "cabecalho"
-    "supervisor"
-    "team"
-    "karma"
-    "calculator"
-    "footer"
-    ;
-}
 
 @media only screen and (min-width:740px) {
     
