@@ -143,6 +143,10 @@ footer {
     }
 }
 
+.teste{
+    display: none;
+}
+
 /*estilos padrão do projeto*/
 
 .attribution {
